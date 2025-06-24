@@ -32,23 +32,6 @@ my-portfolio/
 ├── vite.config.js         # Vite yapılandırması  
 ├── package.json           # Bağımlılıklar ve script'ler  
 └── README.md              # Bu dosya  
----
+```
 
-## 💻 Projeyi Başlatmak ve Yayınlamak
-
-### 1. Depoyu klonla ve bağımlılıkları yükle
-
-```bash
-git clone https://github.com/frk101/my-portfolio.git
-cd my-portfolio
-npm install
-
----
-
-### 2. Geliştirme sunucusunu başlat
-
-```bash
-npm run dev
-
-🌍 Canlı Yayın Linki
-https://frk101.github.io/my-portfolio
+## 📁 Proje Yapısı
