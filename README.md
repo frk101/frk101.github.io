@@ -42,8 +42,9 @@ npm install
 
 2. Geliştirme sunucusunu başlat. 
 npm run dev
-```
+
 Tarayıcıda aç:
 http://localhost:5173
-
+```
+## 💻 Projeyi Başlatmak ve Yayınlamak
 
