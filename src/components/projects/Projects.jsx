@@ -14,13 +14,15 @@ const Projects = () => {
               key={index}
               className="bg-gray-100 dark:bg-slate-800 rounded-lg overflow-hidden shadow hover:shadow-xl transition"
             >
-              {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-              )}
+  {project.image && (
+    <div className="flex justify-center">
+  <img
+    src={project.image}
+    alt={project.title}
+   className="w-32 h-32 rounded-full object-cover mx-auto mt-4 shadow-md"
+  />
+  </div>
+)}
               <div className="p-6 space-y-3">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="text-sm text-slate-600 dark:text-slate-300">{project.description}</p>
@@ -44,22 +46,18 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="text-sm text-blue-500 underline"
                     >
-                      Canlı Demo
+                     Mağaza
                     </a>
                   )}
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-gray-500 underline"
-                  >
-                    GitHub
-                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-sm text-gray-500 dark:text-gray-400 italic">
+          Üzerinde çalıştığım birçok proje var ancak şirketlerin politikaları gereği henüz paylaşamıyorum.
+        </p>
       </div>
     </section>
   );
