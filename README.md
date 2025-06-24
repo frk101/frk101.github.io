@@ -34,4 +34,11 @@ my-portfolio/
 └── README.md              # Bu dosya  
 ```
 
-## 📁 Proje Yapısı
+## 💻 Projeyi Başlatmak ve Yayınlamak
+```bash
+git clone https://github.com/frk101/my-portfolio.git
+cd my-portfolio
+npm install
+```
+
+
