@@ -93,6 +93,3 @@ Medium: https://medium.com/@frkalbayrak
 Bu proje kendimi ifade etmek ve yazılım becerilerimi göstermek için hazırlandı.
 Beğendiysen repoya ⭐ bırakmayı unutma!
 ---
-
-İşte bu kadar! Tek dosyada, kolayca kopyala-yapıştır yapabilirsin.  
-Başka eklemem veya farklı formatta hazırlamamı ister misin?
