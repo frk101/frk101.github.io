@@ -39,6 +39,11 @@ my-portfolio/
 git clone https://github.com/frk101/my-portfolio.git
 cd my-portfolio
 npm install
+
+2. Geliştirme sunucusunu başlat. 
+npm run dev
 ```
+Tarayıcıda aç:
+http://localhost:5173
 
 
