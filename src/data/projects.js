@@ -131,7 +131,6 @@ export const projects = [
     ],
     live: "https://apps.apple.com/us/app/emlak-konut-i-%C5%9F-asistani/id1528745366",
     image: asistan,
-    github: "https://github.com/frk101/tactiq-island",
     // image: "/assets/projects/tactiq.png",
   },
   {
@@ -139,8 +138,7 @@ export const projects = [
     description:
       "React Native ile geliştirilen, farklı adalarda farklı oyunlar sunan çok oyunculu mobil oyun.",
     tech: ["React Native", "Context", "TypeScript"],
-    live: "",
-    github: "https://github.com/frk101/tactiq-island",
+    live: "https://apps.apple.com/us/app/tactiq-island/id6747668183",
     image: tactiq,
     // image: "/assets/projects/tactiq.png",
   },
