@@ -6,6 +6,7 @@ import metpos360 from "../assets/metpos.png";
 import aös from "../assets/aös.png";
 import asistan from "../assets/asistan.png";
 import tactiq from "../assets/tactiq-island.png";
+import tokiMainLogo from "../assets/toki-logo.png";
 
 export const projects = [
   {
@@ -141,5 +142,32 @@ export const projects = [
     live: "https://apps.apple.com/us/app/tactiq-island/id6747668183",
     image: tactiq,
     // image: "/assets/projects/tactiq.png",
+  },
+  {
+    title: "Toki Web",
+    description:
+      "TOKİ Tanıtım Web Sitesi, Next.js ve React.js teknolojileri kullanılarak geliştirilmiş modern bir kurumsal web platformudur. Site, Tailwind CSS ve Styled Components ile estetik ve kullanıcı dostu bir arayüz sunarken, Redux Toolkit ile güçlü bir durum yönetimi sağlamaktadır.Harita ve konum gösterimleri için Leaflet kütüphanesi entegre edilmiştir. Animasyonlarda Framer Motion ve Lottie kullanılmış, medya içerikleri için React Player ve Swiper ile etkileşimli deneyimler oluşturulmuştur.Projede ayrıca Formik & Yup ile form doğrulama, Axios ile API entegrasyonu ve Redux Persist ile kalıcı veri yönetimi sağlanmaktadır.",
+    tech: [
+      "React.js",
+      "Next.js",
+      "Redux Toolkit",
+      "TypeScript",
+      "Tailwind CSS",
+      "Styled Components",
+      "Headless UI",
+      "Heroicons",
+      "NextUI",
+      "Radix UI",
+      "Lucide Icons",
+      "Formik",
+      "Yup",
+      "Axios",
+      "Leaflet",
+      "Framer Motion",
+      "Lottie",
+      "Swiper",
+    ],
+    live: "https://ytw1.toki.gov.tr/",
+    image: tokiMainLogo,
   },
 ];

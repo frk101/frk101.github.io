@@ -1,4 +1,3 @@
-
 const About = () => {
   return (
     <section id="about" className="bg-white dark:bg-slate-800 dark:text-white">
@@ -17,19 +16,21 @@ const About = () => {
           {/* Sağ Açıklama */}
           <div className="text-slate-600 dark:text-slate-300">
             <p>
-              Merhaba, ben <strong>Faruk Albayrak</strong>. React.js ve React Native
-              teknolojileriyle modern ve kullanıcı dostu arayüzler geliştiren bir yazılım geliştiricisiyim.
-              Web ve mobil uygulama geliştirme konularında full stack çözümler üretiyorum.
+              Merhaba, ben <strong>Faruk Albayrak</strong>. React.js ve React
+              Native teknolojileriyle modern ve kullanıcı dostu arayüzler
+              geliştiren bir yazılım geliştiricisiyim. Web ve mobil uygulama
+              geliştirme konularında full stack çözümler üretiyorum.
             </p>
             <br />
             <p>
-              Kod yazarken sadece işlevselliğe değil, aynı zamanda estetik ve kullanıcı deneyimine de önem veririm.
-              Yazılım geliştirme sürecinde her zaman öğrenmeye açık, detaycı ve çözüm odaklıyım.
+              Kod yazarken sadece işlevselliğe değil, aynı zamanda estetik ve
+              kullanıcı deneyimine de önem veririm. Yazılım geliştirme sürecinde
+              her zaman öğrenmeye açık, detaycı ve çözüm odaklıyım.
             </p>
 
             <div>
               <a
-                href="/Faruk-Albayrak-CV.pdf"
+                href="/Faruk.pdf"
                 download
                 className="primary-btn inline-block my-6 mr-6"
               >

@@ -34,7 +34,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Sağ Form */}
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -43,12 +42,12 @@ const Contact = () => {
             className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg space-y-6"
           >
             <div>
-           <label
-  htmlFor="name"
-  className="block mb-1 font-semibold text-gray-700 dark:text-slate-300"
->
-  İsim
-</label>
+              <label
+                htmlFor="name"
+                className="block mb-1 font-semibold text-gray-700 dark:text-slate-300"
+              >
+                İsim
+              </label>
               <input
                 type="text"
                 id="name"
@@ -59,12 +58,12 @@ const Contact = () => {
             </div>
 
             <div>
-           <label
-  htmlFor="email"
-  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
->
-  E-posta
-</label>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
+                E-posta
+              </label>
               <input
                 type="email"
                 id="email"
@@ -75,12 +74,12 @@ const Contact = () => {
             </div>
 
             <div>
-               <label
-  htmlFor="message"
-  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
->
-  E-posta
-</label>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
+                E-posta
+              </label>
               <textarea
                 id="message"
                 placeholder="Mesajınızı buraya yazın..."
