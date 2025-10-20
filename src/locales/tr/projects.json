@@ -1,0 +1,39 @@
+{
+  "title": "Projelerim",
+  "store": "Mağaza",
+  "confidentialNote": "Üzerinde çalıştığım birçok proje var ancak şirketlerin politikaları gereği henüz paylaşamıyorum.",
+  "items": {
+    "emlakKonutBizz": {
+      "title": "Emlak Konut Bizz (Mobil Uygulama)",
+      "description": "React Native ile geliştirilen, Emlak Konut'un çalışanlarına yönelik bir mobil uygulama."
+    },
+    "ekaBizz": {
+      "title": "Eka Bizz (Mobil Uygulama)",
+      "description": "React Native ile geliştirilen, Emlak Konut Asansör çalışanlarına yönelik bir mobil uygulama."
+    },
+    "emlakKonutMobil": {
+      "title": "Emlak Konut Mobil (Mobil Uygulama)",
+      "description": "Emlak Konut'un satış ve kiralama işlemlerini kolaylaştıran, ihale yöntemiyle çalışan kullanıcı dostu bir mobil uygulama."
+    },
+    "metpos360": {
+      "title": "Metpos 360 (Mobil Uygulama)",
+      "description": "React Native ile geliştirilen, ön muhasebe ve finansal işlemleri kolaylaştıran bir mobil uygulama. (Bu uygulama aktif olarak kullanılmaktadır fakat TF üzerinden yetkisi olan kişiler kullanabiliyor.)"
+    },
+    "aos": {
+      "title": "Aös (Mobil Uygulama - Halk Yatırım)",
+      "description": "Akıllı Öneri Sistemi; günlük öneriler, stratejiler, Akıllı Grafikler ve Endeks 30 şirket performanslarını sunan bir Halk Yatırım uygulamasıdır."
+    },
+    "isAsistani": {
+      "title": "Emlak Konut İş Asistanı (Mobil Uygulama)",
+      "description": "Emlak Konut çalışanlarının iş süreçlerini kolaylaştıran, görev yönetimi ve bildirim özellikleri sunan bir mobil uygulama."
+    },
+    "tactiqIsland": {
+      "title": "Tactiq Island (Mobil Oyun)",
+      "description": "React Native ile geliştirilen, farklı adalarda farklı oyunlar sunan çok oyunculu mobil oyun."
+    },
+    "tokiWeb": {
+      "title": "TOKİ Web",
+      "description": "Next.js ve React.js ile geliştirilmiş modern kurumsal web platformu. Tailwind/Styled Components, Leaflet, Framer Motion, Lottie, Swiper, Formik/Yup, Axios ve Redux Persist ile zenginleştirildi."
+    }
+  }
+}

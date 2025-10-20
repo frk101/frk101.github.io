@@ -1,0 +1,22 @@
+{
+  "title": "What Do I Do?",
+  "subtitle": "I develop user-friendly, high-performance, and modern solutions for web, mobile, and backend platforms. Here are some of the services I offer:",
+  "items": [
+    {
+      "name": "Web Application Development",
+      "description": "I build SEO-friendly, modern, and high-performance web applications using React.js and Next.js."
+    },
+    {
+      "name": "Mobile Application Development",
+      "description": "I develop mobile apps with React Native that deliver a native-like experience on both Android and iOS."
+    },
+    {
+      "name": "UI / UX Design",
+      "description": "I create clean and effective user interface designs focused on usability and user experience."
+    },
+    {
+      "name": "API & Backend Development",
+      "description": "I build powerful, secure, and scalable REST API services with Node.js & Express.js."
+    }
+  ]
+}

@@ -5,8 +5,11 @@ import {
   FaInstagram,
   FaMedium,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
+
   return (
     <footer className="text-center py-8 dark:bg-slate-950 bg-gray-100 dark:text-white text-gray-700">
       {/* Sosyal Medya */}
@@ -52,12 +55,11 @@ const Footer = () => {
           <FaMedium />
         </a>
       </div>
-
-      {/* Telif Hakkı */}
       <p className="text-sm px-4">
-        &copy; {new Date().getFullYear()} Faruk Albayrak • Tüm hakları saklıdır. <br />
-        Geliştirildi <span className="text-red-500">❤</span> ile ve bolca{" "}
-        <span className="font-mono">console.log()</span> ile.
+        &copy; {new Date().getFullYear()} Faruk Albayrak • {t("rights")}
+        <br />
+        {t("crafted")} <span className="text-red-500">❤</span> {t("and")}{" "}
+        <span className="font-mono">console.log()</span> {t("with")}.
       </p>
     </footer>
   );

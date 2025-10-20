@@ -1,28 +1,30 @@
 import myPhoto from "../../assets/my-photo.jpeg";
-
+import { useTranslation } from "react-i18next";
 const Hero = () => {
+  const { t: hero } = useTranslation("hero");
+
   return (
     <main className="w-full bg-secondary dark:bg-gray-900 dark:text-white">
       <div className="container grid grid-cols-1 sm:grid-cols-2 items-center space-y-2 py-12 sm:py-0 sm:h-[600px] px-4 sm:px-0">
         <div>
           <div className="space-y-4 grid justify-items-center sm:justify-items-start">
             <p className="uppercase tracking-wider text-lg text-gray-600 dark:text-gray-300">
-              Merhaba 👋
+              {hero("hello")} 👋
             </p>
             <p className="text-4xl md:text-5xl font-bold text-black/80 dark:text-white">
-              Ben Faruk Albayrak
+              {hero("me")}
             </p>
             <p className="text-2xl sm:text-3xl text-gray-700 dark:text-gray-300">
-              Full Stack Developer & Mobil Uygulama Geliştiricisi
+              {hero("title")}
             </p>
             <p className="text-black/75 dark:text-white/70 text-center sm:text-left max-w-md">
-              Kullanıcı dostu, performanslı ve ölçeklenebilir uygulamalar geliştirmeye tutkuyla bağlı bir yazılım geliştiricisiyim. React.js, React Native ve Node.js ile yaratıcı projelere hayat veriyorum.
+              {hero("description")}
             </p>
             <a
               href="mailto:frkalbayrak101@gmail.com"
               className="inline-block primary-btn !px-6"
             >
-              Benimle İletişime Geç
+              {hero("contactMe")}
             </a>
           </div>
         </div>

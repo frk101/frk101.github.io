@@ -1,0 +1,12 @@
+{
+  "title": "Contact",
+  "subtitle": "You can fill out the form to get in touch or use the contact information below.",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send",
+  "placeholderName": "Your Name",
+  "placeholderEmail": "example@mail.com",
+  "placeholderMessage": "Write your message here...",
+  "toastSuccess": "Thank you! Your message has been sent successfully 🎉"
+}

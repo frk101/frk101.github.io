@@ -1,6 +1,28 @@
 import { FiMail, FiPhone } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    toast.success(t("toastSuccess"), {
+      style: {
+        background: "#0ea5e9",
+        color: "#fff",
+        fontWeight: "500",
+      },
+      iconTheme: {
+        primary: "#fff",
+        secondary: "#0ea5e9",
+      },
+    });
+
+    e.target.reset(); // formu temizle
+  };
+
   return (
     <section
       id="contact"
@@ -11,34 +33,37 @@ const Contact = () => {
           {/* Sol Bilgi Paneli */}
           <div>
             <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">
-              İletişim
+              {t("title")}
             </h2>
             <p className="text-gray-600 dark:text-slate-300 mb-6">
-              Benimle iletişime geçmek için formu doldurabilir veya aşağıdaki
-              bilgilerden ulaşabilirsin.
+              {t("subtitle")}
             </p>
 
             <div className="space-y-4 text-sm text-gray-700 dark:text-slate-300">
               <div className="flex items-center gap-3">
                 <FiMail className="text-xl text-primary" />
-                <a href="mailto:frkalbayrak101@gmail.com" className="underline">
+                <a
+                  href="mailto:frkalbayrak101@gmail.com"
+                  className="underline hover:text-primary transition"
+                >
                   frkalbayrak101@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <FiPhone className="text-xl text-primary" />
-                <a href="tel:+905418019560" className="underline">
+                <a
+                  href="tel:+905418019560"
+                  className="underline hover:text-primary transition"
+                >
                   +90 541 801 95 60
                 </a>
               </div>
             </div>
           </div>
 
+          {/* Sağ Form */}
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Teşekkürler! Form gönderildi.");
-            }}
+            onSubmit={handleSubmit}
             className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg space-y-6"
           >
             <div>
@@ -46,12 +71,12 @@ const Contact = () => {
                 htmlFor="name"
                 className="block mb-1 font-semibold text-gray-700 dark:text-slate-300"
               >
-                İsim
+                {t("name")}
               </label>
               <input
                 type="text"
                 id="name"
-                placeholder="Adınız"
+                placeholder={t("placeholderName")}
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
               />
@@ -60,14 +85,14 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                className="block mb-1 font-semibold text-gray-700 dark:text-slate-300"
               >
-                E-posta
+                {t("email")}
               </label>
               <input
                 type="email"
                 id="email"
-                placeholder="ornek@mail.com"
+                placeholder={t("placeholderEmail")}
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
               />
@@ -76,13 +101,13 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                className="block mb-1 font-semibold text-gray-700 dark:text-slate-300"
               >
-                E-posta
+                {t("message")}
               </label>
               <textarea
                 id="message"
-                placeholder="Mesajınızı buraya yazın..."
+                placeholder={t("placeholderMessage")}
                 rows="5"
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
@@ -91,13 +116,14 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-primary text-white py-3 rounded-lg hover:opacity-90 transition"
+              className="w-full bg-primary text-white py-3 rounded-lg hover:opacity-90 transition font-semibold"
             >
-              Gönder
+              {t("send")}
             </button>
           </form>
         </div>
       </div>
+      <Toaster position="bottom-center" />
     </section>
   );
 };

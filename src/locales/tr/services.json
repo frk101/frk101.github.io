@@ -1,0 +1,22 @@
+{
+  "title": "Neler Yapıyorum?",
+  "subtitle": "Web, mobil ve backend alanlarında kullanıcı dostu, performanslı ve modern çözümler geliştiriyorum. İşte sunduğum bazı hizmetler:",
+  "items": [
+    {
+      "name": "Web Uygulama Geliştirme",
+      "description": "React.js ve Next.js ile SEO uyumlu, modern ve performanslı web uygulamaları geliştiriyorum."
+    },
+    {
+      "name": "Mobil Uygulama Geliştirme",
+      "description": "React Native ile hem Android hem de iOS platformları için native hissiyat veren mobil uygulamalar üretiyorum."
+    },
+    {
+      "name": "UI / UX Tasarımı",
+      "description": "Kullanıcı deneyimini önceliklendiren, sade ve etkili arayüz tasarımları oluşturuyorum."
+    },
+    {
+      "name": "API & Backend Geliştirme",
+      "description": "Node.js & Express.js ile güçlü, güvenli ve ölçeklenebilir REST API servisleri geliştiriyorum."
+    }
+  ]
+}

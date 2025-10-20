@@ -6,11 +6,12 @@ import Services from "./components/services/Services.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Projects from "./components/projects/Projects.jsx";
+import LanguageSwitcher from "./components/LanguageSwitcher.tsx";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar rightSlot={<LanguageSwitcher compact />} />
       <Hero />
       <About />
       <Skills />

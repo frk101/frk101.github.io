@@ -1,0 +1,39 @@
+{
+  "title": "Projects",
+  "store": "Store",
+  "confidentialNote": "I work on many projects but can't share them yet due to company policies.",
+  "items": {
+    "emlakKonutBizz": {
+      "title": "Emlak Konut Bizz (Mobile App)",
+      "description": "A React Native mobile app for Emlak Konut employees."
+    },
+    "ekaBizz": {
+      "title": "Eka Bizz (Mobile App)",
+      "description": "A React Native mobile app for Emlak Konut Elevator staff."
+    },
+    "emlakKonutMobil": {
+      "title": "Emlak Konut Mobile (Mobile App)",
+      "description": "A user-friendly mobile app that streamlines Emlak Konut’s sales and rental processes via auctions."
+    },
+    "metpos360": {
+      "title": "Metpos 360 (Mobile App)",
+      "description": "A React Native app that simplifies pre-accounting and financial operations. (Active in production, used by authorized TF users.)"
+    },
+    "aos": {
+      "title": "AOS (Mobile App - Halk Yatırım)",
+      "description": "The Smart Recommendation System provides daily trade ideas, strategies, Smart Charts, BIST30 company performance and more."
+    },
+    "isAsistani": {
+      "title": "Emlak Konut Work Assistant (Mobile App)",
+      "description": "A mobile app for Emlak Konut employees offering task management and notifications."
+    },
+    "tactiqIsland": {
+      "title": "Tactiq Island (Mobile Game)",
+      "description": "A multiplayer mobile game built with React Native featuring different games across islands."
+    },
+    "tokiWeb": {
+      "title": "TOKİ Web",
+      "description": "A modern corporate website built with Next.js and React.js. Enriched with Tailwind/Styled Components, Leaflet, Framer Motion, Lottie, Swiper, Formik/Yup, Axios and Redux Persist."
+    }
+  }
+}

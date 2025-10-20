@@ -1,0 +1,12 @@
+{
+  "title": "İletişim",
+  "subtitle": "Benimle iletişime geçmek için formu doldurabilir veya aşağıdaki bilgilerden ulaşabilirsin.",
+  "name": "İsim",
+  "email": "E-posta",
+  "message": "Mesaj",
+  "send": "Gönder",
+  "placeholderName": "Adınız",
+  "placeholderEmail": "ornek@mail.com",
+  "placeholderMessage": "Mesajınızı buraya yazın...",
+  "toastSuccess": "Teşekkürler! Mesajınız başarıyla gönderildi 🎉"
+}
