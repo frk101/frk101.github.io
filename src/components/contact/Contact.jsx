@@ -1,26 +1,39 @@
 import { FiMail, FiPhone } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
+  const formRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    toast.success(t("toastSuccess"), {
-      style: {
-        background: "#0ea5e9",
-        color: "#fff",
-        fontWeight: "500",
-      },
-      iconTheme: {
-        primary: "#fff",
-        secondary: "#0ea5e9",
-      },
-    });
+    const form = formRef.current;
 
-    e.target.reset(); // formu temizle
+    // template'te {{time}} kullanıyorsun
+    const timeInput = form.querySelector('input[name="time"]');
+    if (timeInput) timeInput.value = new Date().toLocaleString();
+
+    emailjs
+      .sendForm(
+        "service_7me1gba",
+        "template_cy55e1p",
+        form,
+        "CvSgwp3e9uywXrypv"
+      )
+      .then(() => {
+        toast.success(t("toastSuccess"), {
+          style: { background: "#0ea5e9", color: "#fff", fontWeight: "500" },
+        });
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        toast.error(t("toastError") || "Bir hata oluştu.");
+      });
   };
 
   return (
@@ -61,11 +74,13 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Sağ Form */}
           <form
+            ref={formRef}
             onSubmit={handleSubmit}
             className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg space-y-6"
           >
+            <input type="hidden" name="time" />
+
             <div>
               <label
                 htmlFor="name"
@@ -76,6 +91,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
+                name="user_name" /* EmailJS param */
                 placeholder={t("placeholderName")}
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
@@ -92,6 +108,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="user_email" /* EmailJS param */
                 placeholder={t("placeholderEmail")}
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
@@ -107,11 +124,12 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 placeholder={t("placeholderMessage")}
-                rows="5"
+                rows={5}
                 required
                 className="w-full p-3 rounded border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-primary"
-              ></textarea>
+              />
             </div>
 
             <button
